@@ -45,7 +45,27 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      rust_analyzer = {
+        settings = {
+          ["rust-analyzer"] = {
+            imports = {
+              granularity = {
+                group = "crate",
+              },
+              prefix = "crate",
+            },
+            rustfmt = {
+              extraArgs = { "+nightly" },
+            },
+            checkOnSave = {
+              allFeatures = true,
+              command = "clippy",
+              extraArgs = { "--no-deps" },
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
