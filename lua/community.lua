@@ -63,7 +63,7 @@ return {
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
   { import = "astrocommunity.indent.indent-rainbowline" },
 
-  { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
 
   -- other
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
