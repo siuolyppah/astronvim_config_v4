@@ -63,15 +63,8 @@ return {
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
   { import = "astrocommunity.indent.indent-rainbowline" },
 
-  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  { import = "astrocommunity.indent.indent-rainbowline" },
 
   -- other
-  { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
-  {
-    "m4xshen/smartcolumn.nvim",
-    opts = {
-      colorcolumn = 120,
-      disabled_filetypes = { "help" },
-    },
-  },
+  { import = "astrocommunity.keybinding.nvcheatsheet-nvim" },
 }

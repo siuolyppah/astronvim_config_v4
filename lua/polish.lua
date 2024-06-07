@@ -29,6 +29,6 @@ if vim.g.neovide then
   vim.keymap.set("v", "<C-S-v>", '"+P') -- Paste in visual mode
   vim.keymap.set("c", "<C-S-v>", "<C-R>+") -- Paste in command mode
   vim.keymap.set("i", "<C-S-v>", "<C-R>+") -- Paste in insert mode
-  vim.opt.guifont = "Maple Mono:h14"
+  vim.opt.guifont = "FiraCode:h14"
   vim.opt.linespace = 0
 end
